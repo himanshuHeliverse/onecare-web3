@@ -104,6 +104,39 @@
 		.border {
 			border: 1px solid black;
 		}
+
+		.marquee-container {
+			
+			overflow: hidden;
+		}
+
+		.marquee-content {
+			display: flex;
+		align-items: center;
+		}
+
+		.marquee-item {
+
+			margin: 0 30px;
+			/*   flex: 0 0 20vw; */
+			/*   margin: 0 2vw; */
+		}
+
+		.marquee-item img {
+			display: block;
+			width: 100%;
+			/*   padding: 0 20px; */
+		}
+
+		@keyframes scrolling {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translatex(-50%);
+			}
+		}
 	</style>
 </head>
 
@@ -590,7 +623,7 @@
 
 
 
-<img src="./assest/gr.png" alt="">
+					<img src="./assest/gr.png" alt="">
 
 
 
@@ -615,7 +648,7 @@
 
 
 						<div class="flex items-center bg-white rounded-full  my-5 p-3">
-							<img   src="./assest/google.svg" alt="">
+							<img src="./assest/google.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Deepa Kamath</h3>
 								<p>A great place for total Diabetes care. The front desk and customer care explains the
@@ -629,10 +662,13 @@
 
 
 						<div class="flex items-center bg-white rounded-full  ml-10 my-5 p-3">
-							<img  src="./assest/google.svg" alt="">
+							<img src="./assest/google.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Sakshi Agarwal</h3>
-								<p>From the booking to the consultation the staff was very helpful. The consultation was so insightful. The doctor spent ample time and also answered all my questions. I felt  heard and satisfied with his treatment plan. He also made very easy suggestions which  has motivated me. </p>
+								<p>From the booking to the consultation the staff was very helpful. The consultation was
+									so insightful. The doctor spent ample time and also answered all my questions. I
+									felt heard and satisfied with his treatment plan. He also made very easy suggestions
+									which has motivated me. </p>
 							</div>
 
 						</div>
@@ -642,7 +678,9 @@
 							<img class="mx-5" src="./assest/practo.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Prakash Sharma</h3>
-								<p>The doctor is detail-oriented and listens patiently to what we have to discuss and   share. He shows a great friendly gesture which encourages to discuss more about  the problems and take proper feedback. </p>
+								<p>The doctor is detail-oriented and listens patiently to what we have to discuss and
+									share. He shows a great friendly gesture which encourages to discuss more about the
+									problems and take proper feedback. </p>
 							</div>
 
 						</div>
@@ -652,7 +690,9 @@
 							<img class="mx-5" src="./assest/practo.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Rajesh Talreja </h3>
-								<p>I found the doctor very cost-effective. The consultation was so insightful and helpful that everything was worth the money. The doctor was also very good and his suggestions were doable. Thanks to OneCare Diabetes Clinic.</p>
+								<p>I found the doctor very cost-effective. The consultation was so insightful and
+									helpful that everything was worth the money. The doctor was also very good and his
+									suggestions were doable. Thanks to OneCare Diabetes Clinic.</p>
 							</div>
 
 						</div>
@@ -1343,6 +1383,77 @@
 				</div>
 			</div>
 		</section>
+
+
+
+
+		<section id="marquee">
+
+
+			<div class="container  mx-auto py-20 ">
+				<div class="marquee-container">
+					<div class="marquee-content">
+
+
+
+
+
+
+
+						<div class="marquee-item">
+							<img src="./assest/In the News _.svg" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="./assest/VCC-logo.svg" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="./assest/Vector.svg" alt="">
+						</div>
+
+						<div class="marquee-item">
+							<img src="./assest/EH-Logo-white 1.svg" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="./assest/IndianStartupNews-logo 1.svg" alt="">
+						</div>
+						<div class="marquee-item">
+							<img src="./assest/VCC-logo.svg" alt="">
+							</div>
+										
+				
+						<div class="marquee-item">
+							<img src="./assest/Vector (1).svg" alt="">
+						</div>
+					
+
+				
+						<div class="marquee-item">
+							<img src="./assest/EH-Logo-white 1.svg" alt="">
+						</div>
+					
+
+
+					</div>
+				</div>
+				<!-- <div class="marquee-container relative">
+	
+	<img src="./assest/In the News _.svg" alt="">
+	<img src="./assest/VCC-logo.svg" alt="">
+	<img src="./assest/Vector.svg" alt="">
+	<img src="./assest/EH-Logo-white 1.svg" alt="">
+	<img src="./assest/IndianStartupNews-logo 1.svg" alt="">
+	<img src="./assest/VCC-logo.svg" alt="">
+	<img src="./assest/Vector (1).svg" alt="">
+	<img src="./assest/EH-Logo-white 1.svg" alt=""> 
+
+</div> -->
+
+			</div>
+
+
+		</section>
 		<section id="consult" class="bg-drk-blu">
 			<div class="flex items-center justify-around container mx-auto">
 				<div class="font-['Camphor'] text-white py-12 pr-36">
@@ -1375,9 +1486,18 @@
 		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
+
+					$('.marquee-container').marquee({
+			    direction: 'left',
+			    duration: 14000,
+			    gap: 50,
+			    delayBeforeStart: 0,
+			    duplicated: true,
+			    startVisible: true
+			});
 			$(".owl-carousel").owlCarousel({
 				loop: true,
 				margin: 10,
