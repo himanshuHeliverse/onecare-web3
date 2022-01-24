@@ -104,39 +104,23 @@
 		.border {
 			border: 1px solid black;
 		}
-
+ input[type="checkbox"]{
+	 width: 25px;
+	 height:25px;
+ }
 		.marquee-container {
 
 			overflow: hidden;
 		}
-
 		.marquee-content {
 			display: flex;
 			align-items: center;
 		}
 
 		.marquee-item {
-
 			margin: 0 30px;
-			/*   flex: 0 0 20vw; */
-			/*   margin: 0 2vw; */
 		}
 
-		.marquee-item img {
-			display: block;
-			width: 100%;
-			/*   padding: 0 20px; */
-		}
-
-		@keyframes scrolling {
-			0% {
-				transform: translateX(0);
-			}
-
-			100% {
-				transform: translatex(-50%);
-			}
-		}
 	</style>
 </head>
 
@@ -288,25 +272,25 @@
 							program today!</span>
 					</h2>
 					<form id="form">
-						<input class="px-8 py-2 border-solid border rounded" type="text" name="name"
+						<input class="px-8 py-3 w-3/5 border-solid border rounded" type="text" name="name"
 							placeholder="Full Name" required />
 						<br />
-						<input type="hidden" value=+91 name="india">
-						<input class="my-5 px-8 py-2 border-solid border rounded" type="tel" name="phone"
+						
+						<input class="my-5 px-8 py-3 w-3/5 border-solid border rounded" type="tel" name="phone"
 							placeholder="Phone" pattern="[0-9]{10}" maxlength="10"
 							title="Please enter a valid phone number" required />
 
-						<div class="flex">
+						<div class="flex my-5 py-3">
 							<div class="flex items-center mr-10">
 								<input class="mr-2" type="checkbox" id="Online" name="Consultation" value="Online"
 									checked />
-								<label class="f-18" for="Online">Online Consultation</label>
+								<label class="f-20" for="Online">Online Consultation</label>
 							</div>
 
 							<div class="flex items-center">
 								<input class="mr-2" type="checkbox" id="Clinical" name="Consultation"
 									value="Clinical" />
-								<label class="f-18" for="Clinical">Clinical Consultation</label>
+								<label class="f-20" for="Clinical">Clinical Consultation</label>
 							</div>
 						</div>
 
