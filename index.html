@@ -283,11 +283,14 @@
 
 		.popup-wrapper input[type="tel"] {
 			border-bottom: 1px solid;
+			text-align: center;
 			font-size: 30px;
 			margin-right: 20px;
 			width: 10%;
 		}
-
+input[type="submit"]{
+	cursor: pointer;
+}
 		input:focus {
 			outline: none;
 		}
@@ -298,23 +301,24 @@
 	<nav>
 		<div class="container mx-auto flex justify-between p-4">
 			<div class="flex items-center divide-x">
-				<div id="logo">
+				<a href="/">	<div id="logo">
 					<img src="https://onecare.co.in/wp-content/uploads/2022/01/logo.svg" alt="onecare-logo" class="pr-2" />
-				</div>
+				</div></a>
+			
 				<div class="logo-text pl-2 text=['#58595B']">
 					<p>A CHAIN OF SMART</p>
 					<p>DIABETES CLINICS</p>
 				</div>
 			</div>
 			<div class="flex items-center">
-				<button class="flex items-center mr-2 primary-button blue-bg font-['Inter'] font-bold">
+				<a href="tel:08045687460" class="flex items-center mr-2 primary-button blue-bg font-['Inter'] font-bold">
 					<i class="fa fa-phone mr-2"></i>
 					CONTACT US
-				</button>
-				<button class="flex items-center ml-2 primary-button orange-bg font-['Inter'] font-bold">
+				</a>
+				<a href="#form-wrapper" class="flex items-center ml-2 primary-button orange-bg font-['Inter'] font-bold">
 					<i class="fa fa-calculator mr-2"></i>
 					BOOK AN APPOINTMENT
-				</button>
+				</a>
 			</div>
 		</div>
 	</nav>
@@ -342,7 +346,7 @@
 					</div>
 					<div class="flex">
 
-						<button class=" border  rounded  p-2 px-5">resend OTP</button>
+						<button id="resend" class=" border  rounded  p-2 px-5">resend OTP</button>
 
 
 						<input type="submit" value="Done" class=" mx-5 bg-[#28B1DA]  text-white rounded p-2 px-5 " />
@@ -387,9 +391,9 @@
 										I'm quite impressed with the doctor and health coach's style of personalised
 										treatment.
 									</p>
-									<button class="primary-button blue-bg text-lg font-['Inter']">
+									<a href="#form-wrapper" class="primary-button blue-bg text-lg font-['Inter']">
 										Get Started
-									</button>
+									</a>
 									<div class="flex items-center pt-4 text-[#838383] text-lg font-['Camphor']">
 										<p>4.0</p>
 										<p class="px-2">
@@ -446,9 +450,9 @@
 										educators, dieticians, health coaches all working with you to build a
 										personalised care plan specific to your need.
 									</p>
-									<button class="primary-button blue-bg text-lg font-['Inter']">
+									<a href="#form-wrapper" class="primary-button blue-bg text-lg font-['Inter']">
 										Book a Doctor Consultation
-									</button>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -1646,7 +1650,7 @@
 					<h6 class="text-2xl py-4">Connect with india's top doctors</h6>
 				</div>
 				<div class="pl-24">
-					<button class="primary-button blue-bg text-xl">Consult Now</button>
+					<a href="#form-wrapper" class="primary-button blue-bg text-xl">Consult Now</a>
 				</div>
 			</div>
 		</section>
