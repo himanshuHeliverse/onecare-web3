@@ -1,43 +1,73 @@
 $(document).ready(function () {
 
 
+    // var phoneValue = 0;
+    // var name = ""
+    // var consultation = ""
+    // var form = document.getElementById("form");
+    // form.addEventListener("submit", e => {
+    //     e.preventDefault();
+    //     $("#popup").show()
+    //     let url = 'https://onecare.co.in/wp-json/api/v1/send-otp'
 
-    var form = document.getElementById("form");
-    form.addEventListener("submit", e => {
-        e.preventDefault();
-        let url = 'https://verify3-9449-lsdga7.twil.io/start-verify'
+    //     phoneValue = e.target.phone.value
+    //     name = e.target.name.value
+    //     consultation = e.target.consultation.value
+    //     fetch(url, {
+    //         headers: {
+    //             "Content-Type": "Application/json"
+    //         },
+    //         method: 'POST',
+    //         mode: "cors",
+    //         body: JSON.stringify({
+    //             phone: phoneValue
 
-        const phoneValue = e.target.phone.value
-        const country = e.target.india.value
-        const phone = country + phoneValue
-        const username = "AC8f7e48170ef56733fee58a24637ad805"
-        const password = "8625ddca384a88d55f00713b877b2747"
-        console.log(phone)
-//   let form =new FormData()
-//   form.append("to",phone)
-//   form.append("channel","sms")
-//   form.append("locate","en")
-        fetch(url, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-                'Authorization': 'basic' + 'AC8f7e48170ef56733fee58a24637ad805:8625ddca384a88d55f00713b877b2747'
-            }
-
-            , body: JSON.stringify({
-                to: "+919639806383",
-                channel: "sms",
-                locate: "en"
-            })
-        })
-            .then(resp => resp.json())
-            .then(json => console.log(json))
+    //         })
+    //     })
+    //         .then(resp => console.log(resp))
+    //         .catch(err => console.log(err))
 
 
 
-    });
+    // });
 
+
+
+
+    // var popup = document.getElementById("popup-form");
+    // popup.addEventListener("submit", e => {
+    //     e.preventDefault();
+    //     const digit1 = e.target.digit1.value.toString()
+    //     const digit2 = e.target.digit2.value.toString()
+    //     const digit3 = e.target.digit3.value.toString()
+    //     const digit4 = e.target.digit4.value.toString()
+    //     const OTP = digit1 + digit2 + digit3 + digit4
+
+
+    //     let url = 'https://onecare.co.in/wp-json/api/v1/verify-otp'
+
+
+
+    //     fetch(url, {
+    //         headers: {
+    //             "Content-Type": "Application/json"
+    //         },
+    //         method: 'POST',
+    //         mode: "cors",
+    //         body: JSON.stringify({
+
+    //             phone: phoneValue,
+    //             otp: OTP,
+    //             name: name,
+    //             consultation:consultation
+    //         })
+    //     })
+    //         .then(resp => console.log(resp))
+    //         .catch(err => console.log(err))
+
+
+
+    // });
 
 
 

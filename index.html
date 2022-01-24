@@ -104,14 +104,17 @@
 		.border {
 			border: 1px solid black;
 		}
- input[type="checkbox"]{
-	 width: 25px;
-	 height:25px;
- }
+
+		input[type="checkbox"] {
+			width: 25px;
+			height: 25px;
+		}
+
 		.marquee-container {
 
 			overflow: hidden;
 		}
+
 		.marquee-content {
 			display: flex;
 			align-items: center;
@@ -121,6 +124,173 @@
 			margin: 0 30px;
 		}
 
+		/* global */
+
+
+
+		.primary-button {
+			border-radius: 30px;
+			padding: 0.5em 2em;
+			color: white;
+			text-transform: capitalize;
+		}
+
+		.blue-bg {
+			background-color: #28B1DA;
+		}
+
+		.orange-bg {
+			background: #F8A425;
+		}
+
+		.owl-dots {
+			position: absolute;
+			bottom: 2em;
+			right: 0px;
+			left: 0px;
+		}
+
+		.owl-carousel span {
+			width: 17px !important;
+			height: 17px !important;
+			margin: 5px 7px;
+			background: #fff !important;
+			display: block;
+			-webkit-backface-visibility: visible;
+			-webkit-transition: opacity 200ms ease;
+			-moz-transition: opacity 200ms ease;
+			-ms-transition: opacity 200ms ease;
+			-o-transition: opacity 200ms ease;
+			transition: opacity 200ms ease;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+		}
+
+		.owl-carousel .active span {
+			width: 17px !important;
+			height: 17px !important;
+			margin: 5px 7px;
+			background: #F8A425 !important;
+			display: block;
+			-webkit-backface-visibility: visible;
+			-webkit-transition: opacity 200ms ease;
+			-moz-transition: opacity 200ms ease;
+			-ms-transition: opacity 200ms ease;
+			-o-transition: opacity 200ms ease;
+			transition: opacity 200ms ease;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+		}
+
+		/* section based */
+
+
+
+		nav {
+			background-color: white;
+		}
+
+		/* hero */
+		#hero {
+			background-color: white;
+		}
+
+		.owl-item.one {
+			/* background-image:  */
+			background: #fff;
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-1.png');
+			background-image: linear-gradient(360deg, rgba(255, 245, 231, 0.8) 0%, rgba(255, 255, 255, 0) 27.42%), url('https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-1.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.owl-item.two {
+			background: #fff;
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/carousel-img-2.png');
+			background-image: linear-gradient(360deg, rgba(255, 245, 231, 0.8) 0%, rgba(255, 255, 255, 0) 27.42%), url('https://onecare.co.in/wp-content/uploads/2022/01/carousel-img-2.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+		}
+
+		.owl-item.three {
+			background: #fff;
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-3.png');
+			background-image: linear-gradient(360deg, rgba(255, 245, 231, 0.8) 0%, rgba(255, 255, 255, 0) 27.42%), url('https://onecare.co.in/wp-content/uploads/2022/01/carousel-image-3.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+		}
+
+		.one {
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/gry1.svg');
+		}
+
+		.two {
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/gry2.svg');
+		}
+
+		.three {
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/gry3.svg');
+		}
+
+		.four {
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/gry4.svg');
+		}
+
+		.five {
+			background-image: url('https://onecare.co.in/wp-content/uploads/2022/01/gry5.svg');
+		}
+
+		.number-pic {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			min-height: 200px;
+			margin-bottom: 2em;
+		}
+
+		.accordion-item:not(:first-of-type) {
+			border: 1px solid rgb(229 231 235) !important;
+		}
+
+		#popup {
+			z-index: 4;
+			width: 100%;
+			top: 0;
+			position: fixed;
+			height: 100vh;
+			background: #00000040;
+
+			display: none;
+		}
+
+		.popup-wrapper {
+			max-width: 700px;
+
+			margin: 200px auto;
+
+			background-color: white;
+			padding: 30px;
+			flex-direction: column;
+
+		}
+
+		.popup-wrapper input[type="tel"] {
+			border-bottom: 1px solid;
+			font-size: 30px;
+			margin-right: 20px;
+			width: 10%;
+		}
+
+		input:focus {
+			outline: none;
+		}
 	</style>
 </head>
 
@@ -129,7 +299,7 @@
 		<div class="container mx-auto flex justify-between p-4">
 			<div class="flex items-center divide-x">
 				<div id="logo">
-					<img src="./assest/logo.svg" alt="onecare-logo" class="pr-2" />
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/logo.svg" alt="onecare-logo" class="pr-2" />
 				</div>
 				<div class="logo-text pl-2 text=['#58595B']">
 					<p>A CHAIN OF SMART</p>
@@ -149,6 +319,44 @@
 		</div>
 	</nav>
 	<main>
+
+		<section id="popup">
+			<div>
+
+
+				<div class=" flex items-start popup-wrapper">
+
+
+					<h2 class="f-36 drk-blu-txt">OTP Verification</h2>
+					<h3 class="f-24 drk-blu-txt">please enter the OTP sent to your mobile</h3>
+
+
+
+					<div class="my-10">
+						<h3 class="f-20 my-5">Enter OTP</h3>
+						<form id="popup-form">
+							<input type="tel" maxlength="1" id="digit-1" name="digit1" />
+							<input type="tel" maxlength="1" id="digit-2" name="digit2" />
+							<input type="tel" maxlength="1" id="digit-3" name="digit3" />
+							<input type="tel" maxlength="1" id="digit-4" name="digit4" />
+					</div>
+					<div class="flex">
+
+						<button class=" border  rounded  p-2 px-5">resend OTP</button>
+
+
+						<input type="submit" value="Done" class=" mx-5 bg-[#28B1DA]  text-white rounded p-2 px-5 " />
+					</div>
+					</form>
+
+
+				</div>
+
+
+
+
+			</div>
+		</section>
 		<section id="hero">
 			<div class="owl-carousel owl-theme owl-loaded">
 				<div class="owl-stage-outer">
@@ -162,13 +370,13 @@
 									<div class="flex py-4 text-[#989898] text-2xl font-bold font-['Lato']">
 										<div class="flex items-center pr-5">
 											<div>
-												<img class="max-w-[40px]" src="./assest/Rh+.svg" alt="" />
+												<img class="max-w-[40px]" src="https://onecare.co.in/wp-content/uploads/2022/01/Rh+.svg" alt="" />
 											</div>
 											<h6>92/115</h6>
 										</div>
 										<div class="flex items-center">
 											<div>
-												<img class="max-w-[40px]" src="./assest/Pill.svg" alt="" />
+												<img class="max-w-[40px]" src="https://onecare.co.in/wp-content/uploads/2022/01/Pill.svg" alt="" />
 											</div>
 											<h6>50% Reduction</h6>
 										</div>
@@ -275,21 +483,21 @@
 						<input class="px-8 py-3 w-3/5 border-solid border rounded" type="text" name="name"
 							placeholder="Full Name" required />
 						<br />
-						
+
 						<input class="my-5 px-8 py-3 w-3/5 border-solid border rounded" type="tel" name="phone"
 							placeholder="Phone" pattern="[0-9]{10}" maxlength="10"
 							title="Please enter a valid phone number" required />
 
 						<div class="flex my-5 py-3">
 							<div class="flex items-center mr-10">
-								<input class="mr-2" type="checkbox" id="Online" name="Consultation" value="Online"
-									checked />
+								<input class="mr-2" type="radio" id="Online" name="consultation" value="Online"
+									checked  />
 								<label class="f-20" for="Online">Online Consultation</label>
 							</div>
 
 							<div class="flex items-center">
-								<input class="mr-2" type="checkbox" id="Clinical" name="Consultation"
-									value="Clinical" />
+								<input class="mr-2" type="radio" id="Clinical" name="consultation" value="Clinical"
+									 />
 								<label class="f-20" for="Clinical">Clinical Consultation</label>
 							</div>
 						</div>
@@ -306,28 +514,28 @@
 			<div class="py-20 bg-drk-blu">
 				<div class="container flex flex-row justify-center mx-auto">
 					<div class="container flex flex-col items-center text-center max-w-xs">
-						<img src="./assest/Trust.svg" alt="" />
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/Trust.svg" alt="" />
 						<p class="my-5 f-16 text-white">
 							Personalised Diabetes Care <br />program designed 'Just for<br />
 							you'
 						</p>
 					</div>
 					<div class="container flex flex-col items-center text-center">
-						<img src="./assest/Trust.svg" alt="" />
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/Trust.svg" alt="" />
 						<p class="my-5 f-16 text-white">
 							A panel of expert<br />
 							for all your needs
 						</p>
 					</div>
 					<div class="container flex flex-col items-center text-center">
-						<img src="./assest/Medical Mobile App.svg" alt="" />
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/Medical Mobile App.svg" alt="" />
 						<p class="my-5 f-16 text-white">
 							State-of-the-art Health Tracking<br />
 							App customised for you
 						</p>
 					</div>
 					<div class="container flex flex-col items-center text-center">
-						<img src="./assest/Medical Doctor.svg" alt="" />
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/Medical Doctor.svg" alt="" />
 						<p class="my-5 f-16 text-white">
 							Dedicated Health Coach for <br />
 							day to day guidance
@@ -342,7 +550,7 @@
 
 			<div class="container flex justify-center flex-row py-10 mx-auto">
 				<div class="container flex flex-col item-center p-5 mx-10 bg-blue-shd">
-					<img src="./assest/manage1.svg" alt="" />
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/manage1.svg" alt="" />
 
 					<h4 class="text-center f-24 font-bold drk-blu-txt my-3">Step 1</h4>
 					<p class="text-center my-3 f-16">
@@ -352,7 +560,7 @@
 				</div>
 
 				<div class="container flex flex-col item-center p-5 mx-10 bg-pink-shd">
-					<img src="./assest/manage2.svg" alt="" />
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/manage2.svg" alt="" />
 
 					<h4 class="text-center f-24 font-bold drk-blu-txt my-3 ">Step 2</h4>
 					<p class=" f-16 text-center my-3 ">
@@ -361,7 +569,7 @@
 					</p>
 				</div>
 				<div class="container flex flex-col item-center p-5 mx-10 bg-blue-shd">
-					<img src="./assest/manage3.svg" alt="" />
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/manage3.svg" alt="" />
 
 					<h4 class=" f-24 font-bold drk-blu-txt my-3 text-center">Step 3</h4>
 					<p class="text-center my-3 f-16">
@@ -380,40 +588,40 @@
 			<div class="container mx-auto flex items-center ">
 				<div class=" container items-center flex m-10 border-2 border-white rounded-3xl">
 					<div>
-						<img src="./assest/doc1.svg" alt="">
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/doc1.svg" alt="">
 					</div>
 					<div class="flex flex-col ml-5">
 						<h3> Dr. Basavaraj GS </h3>
 						<h4>MBBS, MD, DM (Endocrinology)</h4>
 						<p class="my-2 pink-txt">13+ years of experience <br />Associated with Narayana Hrudayalaya</p>
-						<div class="flex items-center"><img src="./assest/Thumbs Up.svg" alt="">
+						<div class="flex items-center"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs Up.svg" alt="">
 							<p class="ml-3">98% Approval on Practo</p>
 						</div>
 					</div>
 				</div>
 				<div class="container flex items-center m-10 border-2 border-white rounded-3xl">
 					<div>
-						<img src="./assest/doc2.svg" alt="">
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/doc2.svg" alt="">
 					</div>
 
 					<div class="ml-5 ">
 						<h3>Dr. C Siva Rama Krishna </h3>
 						<h4>MD, M.H. Sc. (Diabetology)</h4>
 						<p class="pink-txt my-2"> 10+ years of experience </p>
-						<div class="flex items-center"><img src="./assest/Thumbs Up.svg" alt="">
+						<div class="flex items-center"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs Up.svg" alt="">
 							<p class="ml-3"> 92% Approval on Practo</p>
 						</div>
 					</div>
 				</div>
 				<div class="container flex m-10 items-center border-2 border-white rounded-3xl ">
 					<div>
-						<img src="./assest/doc3.svg" alt="">
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/doc3.svg" alt="">
 					</div>
 					<div class="ml-5">
 						<h3>Dr. Lavanya</h3>
 						<h4> MBBS (Diabetology)</h4>
 						<p class="pink-txt my-2"> 17+ years of experience <br />Associated with Apollo Hospitals</p>
-						<div class="flex items-center"><img src="./assest/Thumbs Up.svg" alt="">
+						<div class="flex items-center"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Thumbs Up.svg" alt="">
 							<p class="ml-3">98% Approval on Practo</p>
 						</div>
 					</div>
@@ -607,7 +815,7 @@
 
 
 
-					<img src="./assest/gr.png" alt="">
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/gr.png" alt="">
 
 
 
@@ -632,7 +840,7 @@
 
 
 						<div class="flex items-center bg-white rounded-full  my-5 p-3">
-							<img src="./assest/google.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Deepa Kamath</h3>
 								<p>A great place for total Diabetes care. The front desk and customer care explains the
@@ -646,7 +854,7 @@
 
 
 						<div class="flex items-center bg-white rounded-full  ml-10 my-5 p-3">
-							<img src="./assest/google.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/google.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Sakshi Agarwal</h3>
 								<p>From the booking to the consultation the staff was very helpful. The consultation was
@@ -659,7 +867,7 @@
 
 
 						<div class="flex items-center bg-white rounded-full  my-5 p-3">
-							<img class="mx-5" src="./assest/practo.svg" alt="">
+							<img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Prakash Sharma</h3>
 								<p>The doctor is detail-oriented and listens patiently to what we have to discuss and
@@ -671,7 +879,7 @@
 
 
 						<div class="items-center flex bg-white rounded-full  ml-10  my-5 p-3">
-							<img class="mx-5" src="./assest/practo.svg" alt="">
+							<img class="mx-5" src="https://onecare.co.in/wp-content/uploads/2022/01/practo.svg" alt="">
 							<div>
 								<h3 class="orange-txt font-bold f-18">Rajesh Talreja </h3>
 								<p>I found the doctor very cost-effective. The consultation was so insightful and
@@ -737,7 +945,7 @@
 
 
 								<div class="container flex ">
-									<div class="flex items-start my-3"><img src="./assest/Location.svg" alt="logo">
+									<div class="flex items-start my-3"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo">
 										<p class="f-18">Opposit to, Sobha Quartz, 227,<br />Ground Floor, Off, Outer
 											Ring Rd,<br />
 											Green
@@ -745,7 +953,7 @@
 									</div>
 
 								</div>
-								<div class="container flex"><img src="./assest/Phone.svg" alt="">
+								<div class="container flex"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="">
 									<h4 class="f-24 ">080 4680 8989</h4>
 								</div>
 								<div class="container mx-5 my-2 items-center flex">
@@ -763,7 +971,7 @@
 
 
 							<div>
-								<img src="./assest/office1.svg" alt="">
+								<img src="https://onecare.co.in/wp-content/uploads/2022/01/office1.svg" alt="">
 							</div>
 						</div>
 
@@ -777,14 +985,14 @@
 
 
 								<div class="container flex ">
-									<div class="flex items-start my-3"><img src="./assest/Location.svg" alt="logo">
+									<div class="flex items-start my-3"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo">
 										<p class="f-18">No. 81, ST Bed Entrance, off 80<br /> Feet Road, Koramangala
 											4th<br /> Block,
 											Koramangala, Bengaluru,<br /> Karnataka 560034</p>
 									</div>
 
 								</div>
-								<div class="container flex"><img src="./assest/Phone.svg" alt="">
+								<div class="container flex"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="">
 									<h4 class="f-24">080 4680 8989</h4>
 								</div>
 								<div class="container mx-5 my-2 items-center flex">
@@ -802,7 +1010,7 @@
 
 
 							<div>
-								<img src="./assest/office2.svg" alt="">
+								<img src="https://onecare.co.in/wp-content/uploads/2022/01/office2.svg" alt="">
 							</div>
 						</div>
 
@@ -813,7 +1021,7 @@
 
 
 								<div class="container flex">
-									<div class="flex items-start my-3"><img src="./assest/Location.svg" alt="logo">
+									<div class="flex items-start my-3"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Location.svg" alt="logo">
 										<p class="f-18">505/1 1st A Cross Indiranagar 1st<br /> Stage (Near CMH
 											Hospital/Costa
 											<br />Coffee), Bengaluru, Karnataka <br />560038
@@ -821,7 +1029,7 @@
 									</div>
 
 								</div>
-								<div class="container flex"><img src="./assest/Phone.svg" alt="">
+								<div class="container flex"><img src="https://onecare.co.in/wp-content/uploads/2022/01/Phone.svg" alt="">
 									<h4 class="f-24">080 4680 8989</h4>
 								</div>
 								<div class="container mx-5 my-2 items-center flex">
@@ -839,7 +1047,7 @@
 
 
 							<div>
-								<img src="./assest/office3.svg" alt="">
+								<img src="https://onecare.co.in/wp-content/uploads/2022/01/office3.svg" alt="">
 							</div>
 						</div>
 
@@ -848,7 +1056,7 @@
 
 
 					<div>
-						<img src="./assest/map2.svg" alt="">
+						<img src="https://onecare.co.in/wp-content/uploads/2022/01/map2.svg" alt="">
 					</div>
 
 
@@ -892,7 +1100,7 @@
 			<div class="container mx-auto flex justify-center py-20 ">
 
 				<div class="flex flex-col flex bg-blue-shd items-start p-10 relative rounded-3xl mx-5">
-					<img src="./assest/Search.svg" alt="">
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/Search.svg" alt="">
 					<div class="py-5 my-5 border-b-2 w-full border-black">
 						<h2 class="drk-blu-txt font-bold f-24">Health & BCM <br />Analysis</h2>
 					</div>
@@ -908,7 +1116,7 @@
 	" class="bg-blue-shd absolute w-16 h-16 rounded-full"></div>
 				</div>
 				<div class="flex flex-col bg-pink-shd items-start p-10 relative rounded-3xl mx-5">
-					<img src="./assest/Stethoscope.svg" alt="">
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/Stethoscope.svg" alt="">
 					<div class="py-5 my-5 border-b-2 w-full border-black">
 						<h2 class="drk-blu-txt font-bold f-24">Doctor's <br />Consultation</h2>
 					</div>
@@ -920,7 +1128,7 @@
 
 				</div>
 				<div class="flex flex-col  relative bg-blue-shd items-start p-10 rounded-3xl mx-5">
-					<img src="./assest/Mortar and Pestle.svg" alt="">
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/Mortar and Pestle.svg" alt="">
 					<div class="py-5 my-5 border-b-2 w-full border-black">
 						<h2 class="drk-blu-txt font-bold f-24">Expert Dietitian <br />Consultation</h2>
 					</div>
@@ -970,14 +1178,14 @@
 
 
 				<div class="relative ">
-					<img src="./assest/pinkbg.svg" alt="">
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/pinkbg.svg" alt="">
 					<div class="absolute" style=" left:-25%;top: 10%;">
 						<div class="relative">
 
 							<div style="right: -25px;    top: -25px;"
 								class="rounded-full w-16 h-16 bg-pink-shd absolute"></div>
 
-							<img src="./assest/doc.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/doc.svg" alt="">
 							<div style="bottom: -25px;left: -25px;" class="bg-blue-shd absolute w-16 h-16 rounded-full">
 							</div>
 						</div>
@@ -1010,7 +1218,7 @@
 				<h2 class="f-36 drk-blu-txt font-bold">Online Consultation Has a Lot of Advantages</h2>
 				<div class="py-20 flex justify-around">
 					<div>
-						<div class="flex items-start my-5"> <img src="./assest/tick.svg" alt="">
+						<div class="flex items-start my-5"> <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
 
 
@@ -1026,7 +1234,7 @@
 
 
 						<div class="flex items-start  my-5">
-							<img src="./assest/tick.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
 								<h2 class="f-24 drk-blu-txt font-bold">Identical clinic experience</h2>
 								<p class=" f-18 my-5 drk-blu-txt">Experience clinic-like consultation<br /> through a
@@ -1042,7 +1250,7 @@
 
 
 						<div class="flex items-start  my-5">
-							<img src="./assest/tick.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
 								<h2 class="f-24 drk-blu-txt font-bold">Simple and convenient</h2>
 								<p class=" f-18 my-5 drk-blu-txt">Within minutes, you can start an instant<br />
@@ -1056,7 +1264,7 @@
 						<div class="flex items-start my-5">
 
 
-							<img src="./assest/tick.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
 								<h2 class="f-24 drk-blu-txt font-bold">First consultation is Free! </h2>
 								<p class=" f-18 my-5 drk-blu-txt">Get a consultation with your favorite <br /> doctor
@@ -1068,7 +1276,7 @@
 						</div>
 					</div>
 					<div>
-						<div class="flex items-start  my-5"> <img src="./assest/tick.svg" alt="">
+						<div class="flex items-start  my-5"> <img src="https://onecare.co.in/wp-content/uploads/2022/01/tick.svg" alt="">
 							<div>
 
 
@@ -1117,13 +1325,13 @@
 
 						<p class="w-1/2 f-24 font-bold">Top endocrinologists and Diabetologists</p>
 						<div class="flex w-36 items-center">
-							<img src="./assest/Tick Box.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
 							<h4 class="f-18">10+ years of<br />
 								experience</h4>
 						</div>
 						<div class="flex  w-36 items-center">
-							<img class=" mx-2" src="./assest/Box Important.svg" alt="logo" />
+							<img class=" mx-2" src="https://onecare.co.in/wp-content/uploads/2022/01/Box Important.svg" alt="logo" />
 							<h4 class=" f-18">varied<br />
 								experience</h4>
 						</div>
@@ -1134,11 +1342,11 @@
 
 						<p class="w-1/2 f-24 font-bold">Personalized & Sustainable Diabetes control program</p>
 						<div class="w-36">
-							<img src="./assest/Tick Box.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
 						</div>
 						<div class="w-36">
-							<img src="./assest/Close Window.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Close Window.svg" alt="logo" />
 
 						</div>
 					</div>
@@ -1149,11 +1357,11 @@
 
 						<p class="w-1/2 f-24 font-bold">Smart & remote monitoring by OneCare mobile app</p>
 						<div class="w-36">
-							<img src="./assest/Tick Box.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
 						</div>
 						<div class="w-36">
-							<img src="./assest/Close Window.svg" alt="logo">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Close Window.svg" alt="logo">
 							</img>
 						</div>
 					</div>
@@ -1164,11 +1372,11 @@
 
 						<p class="w-1/2 f-24 font-bold">24*7 access to expert dietician</p>
 						<div class="w-36">
-							<img src="./assest/Tick Box.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
 						</div>
 						<div class="w-36">
-							<img src="./assest/Close Window.svg" alt="logo">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Close Window.svg" alt="logo">
 							</img>
 						</div>
 					</div>
@@ -1179,11 +1387,11 @@
 
 						<p class="w-1/2 f-24 font-bold">Dedicated coach with free Weekly Sessions</p>
 						<div class="w-36">
-							<img src="./assest/Tick Box.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
 						</div>
 						<div class="w-36">
-							<img src="./assest/Close Window.svg" alt="logo">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Close Window.svg" alt="logo">
 							</img>
 						</div>
 					</div>
@@ -1194,11 +1402,11 @@
 
 						<p class="w-1/2 f-24 font-bold">Free unlimited doctor Follow-ups</p>
 						<div class="w-36">
-							<img src="./assest/Tick Box.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
 						</div>
 						<div class="w-36">
-							<img src="./assest/Close Window.svg" alt="logo">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Close Window.svg" alt="logo">
 							</img>
 						</div>
 					</div>
@@ -1207,11 +1415,11 @@
 						<p class="w-1/2 f-24 font-bold">
 							Focus on controlling & Reversing Diabetes</p>
 						<div class="w-36">
-							<img src="./assest/Tick Box.svg" alt="logo" />
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Tick Box.svg" alt="logo" />
 
 						</div>
 						<div class="w-36">
-							<img src="./assest/Close Window.svg" alt="logo">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Close Window.svg" alt="logo">
 							</img>
 						</div>
 					</div>
@@ -1390,43 +1598,43 @@
 
 
 						<div class="marquee-item">
-							<img src="./assest/In the News _.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/In the News _.svg" alt="">
 						</div>
 
 						<div class="marquee-item">
-							<img src="./assest/VCC-logo.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/VCC-logo.svg" alt="">
 						</div>
 
 						<div class="marquee-item">
-							<img src="./assest/Vector.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Vector.svg" alt="">
 						</div>
 
 						<div class="marquee-item">
-							<img src="./assest/EH-Logo-white 1.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/EH-Logo-white 1.svg" alt="">
 						</div>
 						<div class="marquee-item">
-							<img src="./assest/IndianStartupNews-logo 1.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/IndianStartupNews-logo 1.svg" alt="">
 						</div>
 						<div class="marquee-item">
-							<img src="./assest/VCC-logo.svg" alt="">
-						</div>
-
-
-						<div class="marquee-item">
-							<img src="./assest/Vector (1).svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/VCC-logo.svg" alt="">
 						</div>
 
 
+						<div class="marquee-item">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/Vector (1).svg" alt="">
+						</div>
+
+
 
 						<div class="marquee-item">
-							<img src="./assest/EH-Logo-white 1.svg" alt="">
+							<img src="https://onecare.co.in/wp-content/uploads/2022/01/EH-Logo-white 1.svg" alt="">
 						</div>
 
 
 
 					</div>
 				</div>
-		
+
 			</div>
 
 
@@ -1447,7 +1655,7 @@
 		<div class="container mx-auto flex justify-between items-center p-4">
 			<div>
 				<div id="logo">
-					<img src="./assest/logo.svg" alt="onecare-logo" class="pr-2" />
+					<img src="https://onecare.co.in/wp-content/uploads/2022/01/logo.svg" alt="onecare-logo" class="pr-2" />
 				</div>
 			</div>
 			<div>
@@ -1466,6 +1674,85 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
+
+			var phoneValue = 0;
+			var name = ""
+			var consultation = ""
+			var form = document.getElementById("form");
+			form.addEventListener("submit", e => {
+				e.preventDefault();
+				$("#popup").show()
+				phoneValue = e.target.phone.value
+				name = e.target.name.value
+				consultation = e.target.consultation.value
+				let url = 'https://onecare.co.in/wp-json/api/v1/send-otp'
+
+			
+				fetch(url, {
+					headers: {
+						"Content-Type": "Application/json"
+					},
+					method: 'POST',
+					mode: "cors",
+					body: JSON.stringify({
+						phone: phoneValue
+
+					})
+				})
+					.then(resp => console.log(resp))
+					.catch(err => console.log(err))
+
+
+
+			});
+
+
+
+
+			var popup = document.getElementById("popup-form");
+			popup.addEventListener("submit", e => {
+				e.preventDefault();
+				const digit1 = e.target.digit1.value.toString()
+				const digit2 = e.target.digit2.value.toString()
+				const digit3 = e.target.digit3.value.toString()
+				const digit4 = e.target.digit4.value.toString()
+				const OTP = digit1 + digit2 + digit3 + digit4
+
+
+				let url = 'https://onecare.co.in/wp-json/api/v1/verify-otp'
+
+
+
+				fetch(url, {
+					headers: {
+						"Content-Type": "Application/json"
+					},
+					method: 'POST',
+					mode: "cors",
+					body: JSON.stringify({
+
+						phone: phoneValue,
+						otp: OTP,
+						name: name,
+						consultation: consultation
+					})
+				})
+				.then(data=>data.json())
+					.then(resp => {
+						console.log(resp)
+						if(resp.success){
+							window.location.href="https://onecare.co.in/diabetes-care/thank-you/"
+						}
+					})
+					.catch(err => console.log(err))
+
+
+
+			});
+
+
+
+
 
 			$('.marquee-container').marquee({
 				direction: 'left',
