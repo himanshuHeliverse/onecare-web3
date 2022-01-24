@@ -40,34 +40,42 @@
 			line-height: 64px;
 			letter-spacing: -1.1200000047683716px;
 		}
+
 		.f-36 {
 			font-size: 36px;
 			line-height: 43px;
 		}
+
 		.f-24 {
 			font-size: 24px;
 			line-height: 36px;
 		}
+
 		.f-20 {
 			font-size: 20px;
 			line-height: 32px;
 			letter-spacing: -0.015em;
 		}
+
 		.f-18 {
 			font-size: 18px;
 			line-height: 22px;
 		}
+
 		.f-16 {
 			font-size: 16px;
 			line-height: 20px;
 		}
+
 		.f-14 {
 			font-size: 14px;
 			line-height: 17px;
 		}
+
 		.bg-drk-blu {
 			background: #14566a;
 		}
+
 		.bg-pink-shd {
 			background: linear-gradient(180deg, #ffafc6 -4.33%, #ffefd4 109.25%),
 				linear-gradient(177.97deg, #a3e5ff 1.72%, #fff1f1 98.52%);
@@ -92,7 +100,8 @@
 		.orange-txt {
 			color: #f07162;
 		}
-		.border{
+
+		.border {
 			border: 1px solid black;
 		}
 	</style>
@@ -224,8 +233,8 @@
 		</section>
 
 
-		
-		<section id="form" class="bg-red-50">
+
+		<section id="form-wrapper" class="bg-red-50">
 			<div class="container flex mx-auto py-20">
 				<div class="container">
 					<h2 class="font-bold f-36 text-[#F26975] my-20">
@@ -245,10 +254,11 @@
 							personalised diabetic <br />
 							program today!</span>
 					</h2>
-					<form id="form" method="post" action="https://onecare.co.in/wp-json/api/v1/lead" target="_top">
+					<form id="form">
 						<input class="px-8 py-2 border-solid border rounded" type="text" name="name"
 							placeholder="Full Name" required />
 						<br />
+						<input type="hidden" value=+91 name="india">
 						<input class="my-5 px-8 py-2 border-solid border rounded" type="tel" name="phone"
 							placeholder="Phone" pattern="[0-9]{10}" maxlength="10"
 							title="Please enter a valid phone number" required />
@@ -568,12 +578,127 @@
 			</div>
 		</section>
 
+
+		<section class="py-10 bg-[#FFF5E7]">
+
+
+			<div class="container flex mx-auto py-20">
+
+
+				<div>
+
+
+
+
+<img src="./assest/gr.png" alt="">
+
+
+
+
+
+
+
+				</div>
+
+
+
+				<div class="flex-1 p-10 ml-10">
+
+
+					<h2 class="f-36 font-bold drk-blu-txt">What our users say!</h2>
+
+					<h2 class="f-24 drk-blu-txt">over 1000 reviews</h2>
+
+
+					<div class="my-10">
+
+
+
+						<div class="flex items-center bg-white rounded-full  my-5 p-3">
+							<img   src="./assest/google.svg" alt="">
+							<div>
+								<h3 class="orange-txt font-bold f-18">Deepa Kamath</h3>
+								<p>A great place for total Diabetes care. The front desk and customer care explains the
+									program in detail. Doctors and Dieticians are well qualified.
+									No delay in follow up consultations too! Would recommend to my family n friends</p>
+							</div>
+
+						</div>
+
+
+
+
+						<div class="flex items-center bg-white rounded-full  ml-10 my-5 p-3">
+							<img  src="./assest/google.svg" alt="">
+							<div>
+								<h3 class="orange-txt font-bold f-18">Sakshi Agarwal</h3>
+								<p>From the booking to the consultation the staff was very helpful. The consultation was so insightful. The doctor spent ample time and also answered all my questions. I felt  heard and satisfied with his treatment plan. He also made very easy suggestions which  has motivated me. </p>
+							</div>
+
+						</div>
+
+
+						<div class="flex items-center bg-white rounded-full  my-5 p-3">
+							<img class="mx-5" src="./assest/practo.svg" alt="">
+							<div>
+								<h3 class="orange-txt font-bold f-18">Prakash Sharma</h3>
+								<p>The doctor is detail-oriented and listens patiently to what we have to discuss and   share. He shows a great friendly gesture which encourages to discuss more about  the problems and take proper feedback. </p>
+							</div>
+
+						</div>
+
+
+						<div class="items-center flex bg-white rounded-full  ml-10  my-5 p-3">
+							<img class="mx-5" src="./assest/practo.svg" alt="">
+							<div>
+								<h3 class="orange-txt font-bold f-18">Rajesh Talreja </h3>
+								<p>I found the doctor very cost-effective. The consultation was so insightful and helpful that everything was worth the money. The doctor was also very good and his suggestions were doable. Thanks to OneCare Diabetes Clinic.</p>
+							</div>
+
+						</div>
+
+
+
+
+
+
+					</div>
+
+					<h3 class="text-right drk-blu-txt f-18 font-bold">Read all customer stories</h3>
+
+
+
+
+
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+		</section>
 		<section id="visit" class="py-20 ">
 
 
 
 
-			<div class="container mx-auto relative" >
+			<div class="container mx-auto relative">
 				<h2 class="drk-blu-txt font-bold f-36 my-5">Visit OneCare At</h2>
 				<div class="flex items-center justify-between py-20">
 
@@ -587,7 +712,8 @@
 
 								<div class="container flex ">
 									<div class="flex items-start my-3"><img src="./assest/Location.svg" alt="logo">
-										<p class="f-18">Opposit to, Sobha Quartz, 227,<br />Ground Floor, Off, Outer Ring Rd,<br />
+										<p class="f-18">Opposit to, Sobha Quartz, 227,<br />Ground Floor, Off, Outer
+											Ring Rd,<br />
 											Green
 											Glen Layout, Bellandur,<br /> Bengaluru, Karnataka 560103</p>
 									</div>
@@ -626,13 +752,14 @@
 
 								<div class="container flex ">
 									<div class="flex items-start my-3"><img src="./assest/Location.svg" alt="logo">
-										<p class="f-18">No. 81, ST Bed Entrance, off 80<br /> Feet Road, Koramangala 4th<br /> Block,
+										<p class="f-18">No. 81, ST Bed Entrance, off 80<br /> Feet Road, Koramangala
+											4th<br /> Block,
 											Koramangala, Bengaluru,<br /> Karnataka 560034</p>
 									</div>
 
 								</div>
 								<div class="container flex"><img src="./assest/Phone.svg" alt="">
-									<h4 class="f-24" >080 4680 8989</h4>
+									<h4 class="f-24">080 4680 8989</h4>
 								</div>
 								<div class="container mx-5 my-2 items-center flex">
 									<h4 class="drk-blu-txt font-bold">4.9</h4>
@@ -661,7 +788,8 @@
 
 								<div class="container flex">
 									<div class="flex items-start my-3"><img src="./assest/Location.svg" alt="logo">
-										<p class="f-18">505/1 1st A Cross Indiranagar 1st<br /> Stage (Near CMH Hospital/Costa
+										<p class="f-18">505/1 1st A Cross Indiranagar 1st<br /> Stage (Near CMH
+											Hospital/Costa
 											<br />Coffee), Bengaluru, Karnataka <br />560038
 										</p>
 									</div>
@@ -727,21 +855,22 @@
 		</section>
 		<section id="journey" class="relative">
 
-		
+
 			<h2 class="drk-blu-txt font-bold  f-36 text-center ">
 				Your Journey At OneCare Clinic</h2>
 
 
 
 
-			<div  class="container mx-auto flex justify-center py-20 ">
+			<div class="container mx-auto flex justify-center py-20 ">
 
 				<div class="flex flex-col flex bg-blue-shd items-start p-10 relative rounded-3xl mx-5">
 					<img src="./assest/Search.svg" alt="">
 					<div class="py-5 my-5 border-b-2 w-full border-black">
 						<h2 class="drk-blu-txt font-bold f-24">Health & BCM <br />Analysis</h2>
 					</div>
-					<p class="f-16">Understand your unique body composition <br />which helps you identify areas to improve
+					<p class="f-16">Understand your unique body composition <br />which helps you identify areas to
+						improve
 						<br />your overall health
 					</p>
 					<div style="
@@ -756,7 +885,8 @@
 					<div class="py-5 my-5 border-b-2 w-full border-black">
 						<h2 class="drk-blu-txt font-bold f-24">Doctor's <br />Consultation</h2>
 					</div>
-					<p class="f-16">Understand your diabetes condition and <br /> get a detailed treatment plan to control <br />
+					<p class="f-16">Understand your diabetes condition and <br /> get a detailed treatment plan to
+						control <br />
 						diabetes
 
 					</p>
@@ -792,16 +922,18 @@
 						<h2 class="f-36 my-3">Private consultation + Audio call </h2>
 					</div>
 					<div class="my-20">
-						<a href="#form" class="px-10 f-18 mt-5 bg-cyan-500 py-3 text-white rounded-xl">Book Free Appointment
+						<a href="#form" class="px-10 f-18 mt-5 bg-cyan-500 py-3 text-white rounded-xl">Book Free
+							Appointment
 						</a>
 
 						<div class="flex my-10">
 							<p>4.5</p>
-										<p class="px-2">
-										
-											<i class="fa fa-star"></i>	<i class="fa fa-star"></i>	<i class="fa fa-star"></i>	<i class="fa fa-star"></i>	<i class="fa fa-star"></i>
-										</p>
-										<p>1,044 Reviews</p>
+							<p class="px-2">
+
+								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+									class="fa fa-star"></i> <i class="fa fa-star"></i>
+							</p>
+							<p>1,044 Reviews</p>
 						</div>
 					</div>
 
@@ -858,7 +990,8 @@
 
 								<h2 class="f-24 drk-blu-txt font-bold">Consult With Top Doctors -<br />
 									At your convenience</h2>
-								<p class="f-18 my-5 drk-blu-txt">Choose to visit our clinics in person or<br /> book an online
+								<p class="f-18 my-5 drk-blu-txt">Choose to visit our clinics in person or<br /> book an
+									online
 									consultation. </p>
 							</div>
 						</div>
@@ -869,7 +1002,8 @@
 							<img src="./assest/tick.svg" alt="">
 							<div>
 								<h2 class="f-24 drk-blu-txt font-bold">Identical clinic experience</h2>
-								<p class=" f-18 my-5 drk-blu-txt">Experience clinic-like consultation<br /> through a video call with the
+								<p class=" f-18 my-5 drk-blu-txt">Experience clinic-like consultation<br /> through a
+									video call with the
 									doctor. </p>
 							</div>
 
@@ -884,7 +1018,8 @@
 							<img src="./assest/tick.svg" alt="">
 							<div>
 								<h2 class="f-24 drk-blu-txt font-bold">Simple and convenient</h2>
-								<p class=" f-18 my-5 drk-blu-txt">Within minutes, you can start an instant<br /> consultation or book a
+								<p class=" f-18 my-5 drk-blu-txt">Within minutes, you can start an instant<br />
+									consultation or book a
 									video
 									appointment.ltation. </p>
 							</div>
@@ -897,7 +1032,8 @@
 							<img src="./assest/tick.svg" alt="">
 							<div>
 								<h2 class="f-24 drk-blu-txt font-bold">First consultation is Free! </h2>
-								<p class=" f-18 my-5 drk-blu-txt">Get a consultation with your favorite <br /> doctor for free, </p>
+								<p class=" f-18 my-5 drk-blu-txt">Get a consultation with your favorite <br /> doctor
+									for free, </p>
 
 
 							</div>
@@ -910,7 +1046,8 @@
 
 
 								<h2 class="f-24 drk-blu-txt font-bold">Risk-free consultation</h2>
-								<p class=" my-5 f-18 drk-blu-txt  ">Your online consultation will be<br /> completely confidential and safe.
+								<p class=" my-5 f-18 drk-blu-txt  ">Your online consultation will be<br /> completely
+									confidential and safe.
 								</p>
 							</div>
 
@@ -931,7 +1068,8 @@
 
 
 
-				<h2 class=" drk-blu-txt f-36 font-bold text-center">How technology-enabled OneCare Diabetes Clinics provide better outcomes:</h2>
+				<h2 class=" drk-blu-txt f-36 font-bold text-center">How technology-enabled OneCare Diabetes Clinics
+					provide better outcomes:</h2>
 				<div class=" py-20 ">
 
 
@@ -958,7 +1096,7 @@
 								experience</h4>
 						</div>
 						<div class="flex  w-36 items-center">
-							<img class=" mx-2"  src="./assest/Box Important.svg" alt="logo"/>
+							<img class=" mx-2" src="./assest/Box Important.svg" alt="logo" />
 							<h4 class=" f-18">varied<br />
 								experience</h4>
 						</div>
@@ -1263,6 +1401,7 @@
 			});
 		});
 	</script>
+	<script src="./script.js"></script>
 </body>
 
 </html>
